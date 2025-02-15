@@ -1,32 +1,20 @@
 <script setup>
-// function setTheme() {
-//   if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches))
-//     document.documentElement.classList.add('dark');
+import { useTheme } from 'vuetify';
 
-//   else
-//     document.documentElement.classList.remove('dark');
-// }
-
-// const current_theme = computed(() => {
-//   return localStorage.getItem('theme') || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
-// });
-
-// onMounted(() => {
-//   setTheme();
-// });
-import { useDark, useToggle } from '@vueuse/core';
-
-const isDark = useDark();
-const toggleDark = useToggle(isDark);
+const theme = useTheme();
+function toggleTheme() {
+  theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark';
+  document.documentElement.classList.toggle('dark', theme.global.current.value.dark);
+}
 </script>
 
 <template>
-  <div class="flex items-center justify-between shadow px-4 py-3 bg-white dark:bg-gray-900">
+  <div class="flex items-center justify-between shadow px-4 py-3  dark:bg-gray-900">
     <div>
       Starter Kit
     </div>
-    <div @click="toggleDark()">
-      Change theme
-    </div>
+    <v-btn @click="toggleTheme">
+      toggle theme
+    </v-btn>
   </div>
 </template>
