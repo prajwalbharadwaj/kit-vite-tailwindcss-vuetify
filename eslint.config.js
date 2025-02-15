@@ -18,11 +18,6 @@ export default antfu(
     ],
   },
   {
-    languageOptions: {
-      globals: {
-        logger: 'readonly',
-      },
-    },
     rules: {
       'style/semi': [2, 'always'],
     },
