@@ -1,6 +1,5 @@
 <script setup>
 import { useTheme } from 'vuetify';
-// import { useDark } from '@vueuse/core';
 import { useCommonImports } from '~/common/composables/CommonImports.composable.js';
 import AuthLayout from '~/common/layouts/AuthLayout.vue';
 import DefaultLayout from '~/common/layouts/DefaultLayout.vue';
