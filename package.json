@@ -21,7 +21,8 @@
     "unplugin-icons": "^22.0.0",
     "unplugin-vue-components": "^28.1.0",
     "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "vue-router": "^4.5.0",
+    "vuetify": "^3.7.12"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.2.1",
