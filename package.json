@@ -14,6 +14,8 @@
     "@tailwindcss/postcss": "^4.0.6",
     "@vueuse/components": "^12.6.1",
     "@vueuse/core": "^12.6.1",
+    "dayjs": "^1.11.13",
+    "lodash-es": "^4.17.21",
     "pinia": "^2.3.1",
     "postcss": "^8.5.2",
     "tailwindcss": "^4.0.6",
