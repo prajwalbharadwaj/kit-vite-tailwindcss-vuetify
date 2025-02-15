@@ -4,12 +4,18 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 8080 --open",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.0.6",
+    "@vueuse/components": "^12.6.1",
+    "@vueuse/core": "^12.6.1",
     "pinia": "^2.3.1",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^4.0.6",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },

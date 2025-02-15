@@ -1,9 +1,30 @@
 <script setup>
+import { useDark, useToggle } from '@vueuse/core';
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
+
+// function setTheme() {
+//   if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches))
+//     document.documentElement.classList.add('dark');
+
+//   else
+//     document.documentElement.classList.remove('dark');
+// }
+
+// const current_theme = computed(() => {
+//   return localStorage.getItem('theme') || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+// });
+
+// onMounted(() => {
+//   setTheme();
+// });
 </script>
 
 <template>
+  <!-- <div @click="toggleDark()">button</div>
+  <div class="text-blue-500 dark:text-red-500">testing a</div> -->
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
