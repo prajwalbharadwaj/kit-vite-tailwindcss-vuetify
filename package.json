@@ -1,13 +1,14 @@
 {
   "name": "kit-vite-tailwindcss-primevue",
+  "type": "module",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "vite --port 8080 --open",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.6",
@@ -20,7 +21,9 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^4.2.1",
     "@vitejs/plugin-vue": "^5.2.1",
+    "eslint": "^9.20.1",
     "vite": "^6.0.11",
     "vite-plugin-vue-devtools": "^7.7.1"
   }
