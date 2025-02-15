@@ -1,6 +1,5 @@
 <script setup>
 import { useDark } from '@vueuse/core';
-// import { computed, onMounted, watch } from 'vue';
 import { useCommonImports } from '~/common/composables/CommonImports.composable.js';
 import AuthLayout from '~/common/layouts/AuthLayout.vue';
 import DefaultLayout from '~/common/layouts/DefaultLayout.vue';
